@@ -12,7 +12,7 @@ int main()
         bool primo = true;
         cin >> numero;
         
-        for(int j = 2; j <= sqrt(numero); j++){
+        for(int j = 2; j*j <= numero; j++){
             if(numero % j == 0){
                 cout << "Not Prime" << endl;
                 primo = false;
